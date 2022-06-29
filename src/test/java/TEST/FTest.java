@@ -67,8 +67,8 @@ public class FTest {
     String expectedText = "UserId should be minimum 6 ";
 	
 //   Assert.assertEquals( text, expectedText);
-//	SoftAssert sa= new SoftAssert();
-//	sa.assertEquals(text, expectedText);
+	SoftAssert sa= new SoftAssert();
+	sa.assertEquals(text, expectedText);
 	String username = param2.getData(0, 2);
 	String pw= param2.getData(1, 2);
 	lgnpg.enteruserid(username);
@@ -333,7 +333,8 @@ public class FTest {
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
 		homepg.clickondashboard();
-		System.out.println("Test dashboard new branch");
+		System.out.println("Test dashboard new to main branch");
+		System.out.println("new request1");
 
 
 	}
