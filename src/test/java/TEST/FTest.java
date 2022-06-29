@@ -333,7 +333,7 @@ public class FTest {
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
 		homepg.clickondashboard();	
-		System.out.println("Test dashboard");
+		System.out.println("Test dashboard new branch");
 	}
 	@Test(priority=2)
 	public void positions() throws EncryptedDocumentException, IOException {
@@ -349,6 +349,7 @@ public class FTest {
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
 		homepg.clickonPositions();
+		System.out.println("new");
 	}
 	@Test(priority=2)
 	public void holdings() throws EncryptedDocumentException, IOException {
