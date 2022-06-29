@@ -333,8 +333,7 @@ public class FTest {
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
 		homepg.clickondashboard();
-		System.out.println("Test dashboard new to main branch");
-		System.out.println("new request1");
+		System.out.println("new request2");
 
 
 	}
