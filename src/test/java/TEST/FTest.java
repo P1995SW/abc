@@ -377,22 +377,7 @@ public class FTest {
 		ZHome homepg= new ZHome(driver);
 		homepg.clickonfunds();
 	}
-	@Test(priority=2)
-	public void applications() throws EncryptedDocumentException, IOException {
-		ZLogin lgnpg = new ZLogin(driver);
-		String username = param2.getData(0, 2);
-		String pw= param2.getData(1, 2);
-		lgnpg.enteruserid(username);
-		lgnpg.pw(pw);
-		lgnpg.loginclick();
-		zpin pn = new zpin(driver);
-		String pin= param2.getData(2, 1);
-		pn.enterPin(pin, driver);
-		pn.clkcont();
-		ZHome homepg= new ZHome(driver);
-		homepg.clickonApp();
-
-	}
+	
 	@AfterMethod
 	public void createresult(ITestResult result) {
 		if(result.getStatus()==ITestResult.FAILURE) {
