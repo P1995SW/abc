@@ -66,9 +66,9 @@ public class FTest {
 
     String expectedText = "UserId should be minimum 6 ";
 	
-//	Assert.assertEquals( text, expectedText);
-	SoftAssert sa= new SoftAssert();
-	sa.assertEquals(text, expectedText);
+	Assert.assertEquals( text, expectedText);
+//	SoftAssert sa= new SoftAssert();
+//	sa.assertEquals(text, expectedText);
 	String username = param2.getData(0, 2);
 	String pw= param2.getData(1, 2);
 	lgnpg.enteruserid(username);
@@ -79,7 +79,9 @@ public class FTest {
 	pn.enterPin(pin, driver);
 	pn.clkcont();
 
-	}    
+	} 
+	
+	
 	@Test(priority=-1)
 	public void lgwtcred_lgt_lo_sl_buy() throws EncryptedDocumentException, IOException, InterruptedException {
 	    test = reports.createTest("lgwtcred_lgt_lo_sl_buy");
