@@ -332,8 +332,10 @@ public class FTest {
 		pn.enterPin(pin, driver);
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
-		homepg.clickondashboard();	
-		System.out.println("dashboard");
+		homepg.clickondashboard();
+		System.out.println("Test dashboard new branch");
+
+
 	}
 	@Test(priority=2)
 	public void positions() throws EncryptedDocumentException, IOException {
@@ -348,7 +350,9 @@ public class FTest {
 		pn.enterPin(pin, driver);
 		pn.clkcont();
 		ZHome homepg= new ZHome(driver);
-		//homepg.clickonPositions();
+		homepg.clickonPositions();
+		System.out.println("new");
+		homepg.clickonPositions();
 	}
 	@Test(priority=2)
 	public void holdings() throws EncryptedDocumentException, IOException {
